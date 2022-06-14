@@ -1,6 +1,7 @@
 package hello.hellospring.repository;
 
 import hello.hellospring.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
@@ -17,7 +18,7 @@ import java.util.Optional;
  * -----------------------------------------------------------
  * 2022-06-13        ipeac       최초 생성
  */
-
+@Repository
 public interface MemberRepository {
       
       Member save(Member member);
@@ -27,6 +28,5 @@ public interface MemberRepository {
       Optional<Member> findByName(String name);
       
       List<Member> findAll();
-      
       
 }
