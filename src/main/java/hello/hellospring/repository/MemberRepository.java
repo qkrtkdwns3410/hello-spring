@@ -18,7 +18,6 @@ import java.util.Optional;
  * -----------------------------------------------------------
  * 2022-06-13        ipeac       최초 생성
  */
-@Repository
 public interface MemberRepository {
       
       Member save(Member member);

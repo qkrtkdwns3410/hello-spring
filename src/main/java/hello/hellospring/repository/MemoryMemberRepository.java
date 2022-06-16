@@ -1,6 +1,7 @@
 package hello.hellospring.repository;
 
 import hello.hellospring.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
@@ -16,7 +17,6 @@ import java.util.*;
  * -----------------------------------------------------------
  * 2022-06-13        ipeac       최초 생성
  */
-
 public class MemoryMemberRepository implements MemberRepository {
       
       private static Map<Long, Member> store = new HashMap<>();

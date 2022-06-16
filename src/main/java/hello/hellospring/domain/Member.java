@@ -1,5 +1,8 @@
 package hello.hellospring.domain;
 
+import javax.persistence.*;
+
+
 /**
  * packageName    : hello.hellospring.domain
  * fileName       : Member
@@ -11,10 +14,13 @@ package hello.hellospring.domain;
  * -----------------------------------------------------------
  * 2022-06-13        ipeac       최초 생성
  */
-
+@Entity
 public class Member {
       
+      @Id
+      @GeneratedValue(strategy = GenerationType.IDENTITY)
       private Long id;
+      
       private String name;
       
       public Long getId() {
